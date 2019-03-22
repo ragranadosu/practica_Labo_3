@@ -19,7 +19,7 @@ public class NewActivity extends AppCompatActivity {
         mTextView = findViewById(R.id.textNuevo);
         Intent mIntent = getIntent();
         if(mIntent!= null){
-            mTextView.setText(mIntent.getStringExtra(AppConstant.TEXT_KEY));
+            mTextView.setText(mIntent.getStringExtra(Intent.EXTRA_TEXT));
         }
     }
 }
